@@ -1,5 +1,4 @@
 import requests
-from pprint import pprint
 
 
 def the_smartest(adress='https://superheroapi.com/api/2619421814940190/search/',
@@ -11,4 +10,5 @@ def the_smartest(adress='https://superheroapi.com/api/2619421814940190/search/',
     return max(result, key=lambda x: int(x[1]))
 
 
-pprint(the_smartest())
+if __name__ == '__main__':
+    print(the_smartest())
