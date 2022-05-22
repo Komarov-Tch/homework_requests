@@ -22,7 +22,7 @@ class YaUploader:
             if response.status_code == 201:
                 return 'Успех, файл загружен'
             else:
-                return 'Ошибка загрузки файла: \n' + f'\nHttp статус: {resp.status_code}, ({resp.reason})'
+                return 'Ошибка загрузки файла:'
         else:
             return 'Ошибка выполнения запроса: \n' + files_url + f'\nHttp статус: {resp.status_code}, ({resp.reason})'
 
