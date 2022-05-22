@@ -9,7 +9,7 @@ class StackOvewrflow:
         url = f'https://api.stackexchange.com/2.2/questions?fromdate={date}' \
               f'&order=desc&sort=activity&tagged={tag}&site=stackoverflow'
         response = requests.get(url)
-        result = [i['title'] for i in response.json()['items']]
+        result = [(i['title'], i['link']) for i in response.json()['items']]
         if response:
             pprint(result)
         else:
