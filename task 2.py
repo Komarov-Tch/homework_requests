@@ -31,7 +31,7 @@ if __name__ == '__main__':
     adress_file = os.path.join(os.getcwd(), 'uplod_file')
     file_name = 'netology.txt'
     path_to_file = os.path.join(adress_file, file_name)
-    token = 'AQAEA7qj0raoAADLW_vnoQBqMUVSomYC9clYjfw'
+    token = 
     uploader = YaUploader(token)
     result = uploader.upload(path_to_file)
     print(result)
